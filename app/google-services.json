@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "215146421977",
+    "firebase_url": "https://sharewallet-4e07d-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "sharewallet-4e07d",
+    "storage_bucket": "sharewallet-4e07d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215146421977:android:eaccaff6c38993781968c8",
+        "android_client_info": {
+          "package_name": "com.buybyme.sharewallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215146421977-4efqvv5qt6hcjp8t5pib8809ckptmoer.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnRVCHh7AvjwLQydpqVSBLPYdInD__lYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215146421977-4efqvv5qt6hcjp8t5pib8809ckptmoer.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10px">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CV_WALLET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:padding="10px"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20px">
+
+            <ImageView
+                android:id="@+id/IV_WALLET"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/wallet" />
+
+            <ImageView
+                android:id="@+id/IV_MONEY"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dinero" />
+
+            <ImageView
+                android:id="@+id/IV_PEOPLE"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/IV_WALLET"
+                app:layout_constraintTop_toBottomOf="@+id/IV_MONEY"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/personas" />
+
+            <ImageView
+                android:id="@+id/IV_MESSAGE"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/TV_PEOPLE"
+                app:layout_constraintTop_toBottomOf="@+id/IV_MONEY"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/email" />
+
+            <TextView
+                android:id="@+id/TV_WALLET_NAME"
+                style="@style/text_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="WALLET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/IV_WALLET"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TV_MONEY"
+                style="@style/text_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/IV_MONEY"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TV_PEOPLE"
+                style="@style/text_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/IV_PEOPLE"
+                app:layout_constraintTop_toBottomOf="@+id/IV_MONEY"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/TV_DESCRIPTION"
+                style="@style/text_app"
+                android:layout_width="207dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:text="DESCRIPTION"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toTopOf="@+id/IV_PEOPLE"
+                app:layout_constraintEnd_toStartOf="@+id/TV_MONEY"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/IV_WALLET"
+                app:layout_constraintTop_toBottomOf="@+id/TV_WALLET_NAME" />
+
+            <TextView
+                android:id="@+id/TV_MESSAGE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/IV_MESSAGE"
+                app:layout_constraintTop_toBottomOf="@+id/IV_MONEY"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
